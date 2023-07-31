@@ -26,6 +26,13 @@
 
     .name {
       color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a {
@@ -33,22 +40,41 @@
       text-decoration: none;
     }
 
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
     .link {
       background-color: #f9bc60;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
 
     .link a {
       color: #001e1d;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
 
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 650px;
+      flex-grow: 1;
     }
   </style>
 
 </head>
 
 <body>
+<div class="items">
   <div class="banner">
-    <img src="banner-pic.jpg" alt="Waves washing up beach" class="banner-image">
+    <img src="headshot.jpg" alt="Waves washing up beach" class="banner-image">
   </div>
 
   <div class="name">
@@ -63,22 +89,30 @@
     <a href="https://www.linkedin.com/in/david-hibble-99815514b/" target="_blank">
       LinkedIn!
     </a>
+  </div>
 
   <div class="link">
     <img class="thumbnail" src="https://cf.ltkcdn.net/womens-fashion/images/std/263155-800x515r1-professional-business-attire-women.webp" alt="business attire">
     <a target="_blank" href="https://jobs.washingtonpost.com/article/did-you-give-your-best-effort-/">
       Did You Give Your Best Effort?
     </a>
+  </div>
 
-    <img class="thumbnail" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.themuse.com%2Fadvice%2F10-free-classes-to-learn-to-code-if-you-have-absolutely-no-idea-where-to-start&psig=AOvVaw3uGrr63b3HV2VbZZVJnB4C&ust=1690853400970000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIC5h_Xlt4ADFQAAAAAdAAAAABAI" alt="computer programming">
+  <div class="link">
+    <img class="thumbnail" src="/coding.jpg" alt="computer programming">
     <a target="_blank" href="https://www.indeed.com/career-advice/interviewing/why-do-you-want-to-be-a-software-developer">
       10 Reasons to Become a Software Developer!
     </a>
-
-  </div>
   </div>
 
-  
+  <div class="link">
+    <img class="thumbnail" src="/coursera-logo.png" alt="coursera logo">
+    <a target="_blank" href="https://www.coursera.org/learn/learning-how-to-learn">A Course on Learning How to Learn!
+    </a>
+  </div>
+
+
+</div>
 </body>
 
 </html>
